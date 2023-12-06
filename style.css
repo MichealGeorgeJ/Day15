@@ -1,0 +1,59 @@
+body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    background-attachment: fixed;
+}
+.calc{
+    border: 2px solid #304352;
+    height:80vh;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr;
+    gap:.3rem;
+    font-size: larger;
+    padding:5px;
+    border-radius:7px ;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+   
+}
+input{
+    grid-column: span 4;
+    border: 1px solid white;
+    background-color: #304352;
+    color:white;
+    border-radius: 7px;
+    text-align: right;
+    font-size:xx-large;
+    padding: 30px;
+}
+input::placeholder{
+    color:white;
+}
+#equal{
+    grid-column: span 2;
+    background-color: #304352;
+}
+button{
+    border: 1px solid white;
+    border-radius: 10px;
+    /*margin:.25rem;
+    */color: white;
+    background-color: #304352;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    font-size: larger;
+    
+   
+}
+p{
+    font-size: large;
+}
+button:hover{
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+
+}
+.operator{
+    color:aqua;
+}
